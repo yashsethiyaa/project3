@@ -1,0 +1,252 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Us</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #000;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .user-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .user-name {
+        margin-right: 10px;
+      }
+
+      .start-room {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        float: right;
+        width: 15%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-bar {
+        margin-bottom: 20px;
+      
+        display: flex;
+        justify-content:center;
+
+      } 
+
+      .search-bar input {
+        width: 30%;
+        padding: 10px;
+        margin-left: 15px;
+        border-radius: 5px 0 0 5px;
+        border: none;
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .rooms-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .room-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        color: #000;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .room-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .room-hosts {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .host-avatar {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-right: 10px;
+        overflow: hidden;
+        margin-top: 40px  ;
+      }
+
+      .room-participants {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .div{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .user-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+      }
+      .room-card span{
+        height: 20px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">Stream Us</div>
+        <div class="user-info">
+          
+          <span class="user-name">Rakesh K</span>
+          <div class="div">
+            <img src="virat.jpg" alt="" class="user-img">
+          </div>
+        </div>
+
+        
+      </header>
+      <main>
+        <div class="search-bar">
+          <h4>All Voice Room</h4>
+          <input type="text" placeholder="All voice rooms">
+        
+        <button class="start-room">Start a room</button>
+      
+        </div>
+        <div class="rooms-grid">
+          <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt=""> 50</span>
+            </div>
+          </div>
+          <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt="">45</span>
+            </div>
+          </div>
+          <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt="">15</span>
+            </div>
+          </div>
+          <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+    
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt="">11</span>
+            </div>
+          </div>        <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt="">10</span>
+            </div>
+          </div>
+          <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt="">8</span>
+            </div>
+          </div>
+          <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt="">15</span>
+            </div>
+          </div>
+          <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt="">7</span>
+            </div>
+          </div>
+          <div class="room-card">
+            <h3 class="room-title">Which framework best for frontend?</h3>
+            <div class="room-hosts">
+              <img src="virat.jpg" alt="Virat Kohli" class="host-avatar">
+            </div>
+            <div class="room-participants">
+              <span><img src="group.png" alt="">2</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  </html>
